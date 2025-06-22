@@ -8,8 +8,10 @@
     --bg-color:rgb(36,53,63);
     --header-color:rgb(23,162,184);
     --input-border-color:rgb(206,212,218);
-    --light:var(white);
-    --dark:var(black);    
+    --light:white;
+    --dark:black;   
+    --warning:rgb(255,193,7); 
+    --secondary:gray;
 }
 
 html , body {
@@ -69,3 +71,46 @@ html , body {
   --bs-btn-disabled-color: #0d6efd;
   --bs-btn-disabled-bg: transparent;
 }
+
+/* home page style */
+
+.navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0.5rem;
+    --bs-navbar-color: var(--bg-color);
+    --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+    --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+    --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-brand-margin-end: 1rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+    --bs-navbar-toggler-border-color: var(--secondary);
+    --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+    --bs-navbar-toggler-focus-width: 0.25rem;
+    --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;    
+}
+
+.navbar .nav-item {
+    transition: .5s;
+}
+
+.nav-item:hover {
+    background-color: var(--warning);
+}
+
+.navbar .nav-item .nav-link {
+    color: var(--secondary);
+}
+
+.nav-item:hover .nav-link {
+    color: var(--light);
+}
+
+.title {
+    background-color: var(--bg-color);
+    color: var(--header-color);
+}
+   
