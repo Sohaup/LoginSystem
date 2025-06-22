@@ -57,6 +57,13 @@ html , body {
   --bs-btn-hover-bg: var(--header-color);  
 }
 
+.login-link {
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
 /* home page style */
 
 .navbar {   
